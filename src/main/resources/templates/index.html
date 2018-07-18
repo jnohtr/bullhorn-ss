@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" crossorigin="anonymous">-->
+</head>
+<body>
+
+    <div th:replace="base :: navlink"></div>
+
+
+    <h2> Bullhorn Page</h2>
+    <a href="/secure">Secure Page</a> <br>
+
+    <a href="/add"> Add Message </a>
+
+    <a href="/listmsg"> View Message </a>
+
+
+    <br />
+    <div th:replace="base :: footter"></div>
+
+</body>
+</html>

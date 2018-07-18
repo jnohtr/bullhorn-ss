@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" crossorigin="anonymous">
+</head>
+<body>
+<table>
+    <tr class="text-dark">
+        <th class="pr-3">Content</th>
+        <th class="pr-3">Sent By</th>
+        <th class="pr-3">Date</th>
+    </tr>
+    <tr>
+        <td class="pr-4" th:text="${message.content}"></td>
+        <td class="pr-3" th:text="${message.setBy}"></td>
+        <td class="pr-3" th:text="${message.datePosted}"></td>
+
+    </tr>
+</table>
+<br>
+
+<<a href="/add">Add a Message</a>
+
+
+</body>
+</html>
